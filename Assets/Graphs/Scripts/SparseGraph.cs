@@ -8,8 +8,6 @@ namespace AIEngine.Graphs
         [SerializeField] protected List<GraphEdge> edges;
         [SerializeField] protected bool isDigraph = false;
         [SerializeField] protected int nextGraphFreeIndce = 0;
-
-
         protected virtual void Start()
         {
             nodes = new List<INodeGraph>(); edges = new List<GraphEdge>();
@@ -25,7 +23,6 @@ namespace AIEngine.Graphs
             }
             return null;
         }
-
         public virtual GraphEdge GetEdge(int from, int to)
         {
             foreach (GraphEdge edge in edges)
@@ -38,7 +35,6 @@ namespace AIEngine.Graphs
             }
             return null;
         }
-
         public int GetNextFreeIndice() => nextGraphFreeIndce;
         public int AddNode(INodeGraph node)
         {
@@ -46,7 +42,6 @@ namespace AIEngine.Graphs
             node.SetIndice(nextGraphFreeIndce);
             return nextGraphFreeIndce++;
         }
-
         public void RemoveNode(INodeGraph node)
         {
             foreach (INodeGraph n in nodes)
@@ -68,7 +63,6 @@ namespace AIEngine.Graphs
                 }
             }
         }
-
         public bool AddEdge(int from, int to)
         {
             foreach (GraphEdge edge in edges)
@@ -82,7 +76,6 @@ namespace AIEngine.Graphs
             edges.Add(new GraphEdge(from, to));
             return true;
         }
-
         public GraphEdge RemoveEdge(int from, int to)
         {
             foreach (GraphEdge edge in edges)
@@ -94,8 +87,6 @@ namespace AIEngine.Graphs
             }
             return null;
         }
-
-        
 
     }
 }
