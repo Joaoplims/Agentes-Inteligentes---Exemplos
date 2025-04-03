@@ -29,7 +29,7 @@ public class NavGraph : SparseGraph
         if (shouldDebug == false) return;
 
 
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.red;
         foreach (GraphEdge e in edges)
         {
             var nodeFrom = GetNode(e.from) as PositionNode;
