@@ -54,7 +54,7 @@ public class DecisionTreeController : MonoBehaviour
         }
         else if (result is DecisionNode decisionNode)
         {
-            Debug.Log("Oie, decision");
+  
             var d = decisionNode.MakeDecision(blackboard);
         }
         else

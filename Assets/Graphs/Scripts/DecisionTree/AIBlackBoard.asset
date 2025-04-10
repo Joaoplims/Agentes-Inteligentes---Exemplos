@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bedd8e1593c4249b73045bcb3ade8d, type: 3}
   m_Name: AIBlackBoard
   m_EditorClassIdentifier: 
-  heath: 37.7
-  enemyCount: 28
+  heath: 15.5
+  enemyCount: 2
